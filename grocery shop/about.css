@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad&family=Poppins:wght@300&family=Rajdhani:wght@300&family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-us{
+    background-image:linear-gradient(rgb(33, 31, 31),#0e0000de),url("image/453933.jpg");
+    height: 350px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10px;
+    margin-top: -100px;
+    margin-left: -70px;
+    z-index: 1;
+}
+.navbar a{
+    color:wheat !important;
+    margin-right: 20px;
+} 
+
+.nav-item a:hover{
+    color: #ecf4d686 !important;
+}
+
+.navbar{
+    background-color:#265073;
+    opacity: 0.8;
+    z-index:1;
+}
+.about{
+    color: aliceblue;  
+    
+}
+.about p{
+    word-spacing: 2px;
+    color: rgb(164, 156, 140);
+    animation-duration: 2s;
+    animation-name: log1;
+  
+}
+.about h1{
+    letter-spacing: 4px;
+    color:white;
+    animation-duration: 2s;
+    animation-name: log;
+  
+}
+.con img{
+    width: 600px;
+    border-radius: 9px;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+   
+}
+.para p{
+    color:#265073;
+    
+}
+.para h1{
+    color:#265073;
+}
+@keyframes log{
+    from{
+        margin-right: 390px;
+    }
+    to{
+        left:0px;
+    }
+}
+
+@keyframes log1{
+    from{
+        margin-bottom: 490px;
+    }
+    to{
+        top:10px;
+    }
+}

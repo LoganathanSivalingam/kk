@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="453933.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Kk stores</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top  nav">
+        <div class="container-fluid">
+          <a class="navbar-brand brand-name" href="#">KK Stores</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+          </button>
+          
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav  mx-auto mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html"><i class="bi bi-house-door"></i> Home</a>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="about.html"><i class="bi bi-file-earmark-person"></i> About us</a>
+                </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="" >Products</a>
+                  </li>
+  
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">Contact</a>
+                    </li>
+            </ul>
+            <button type="button" class="btn btn-outline-info">Sign In</button>
+          </div>
+        </div>
+    </nav>
+
+    <!--...............home...............-->
+    <section id="home"> 
+        <div class="para">
+            <h1 class="text-center">Krishnakumari Stores</h1>
+            <p class="text-center">"Discover the joy of effortless shopping – where variety meets value, and freshness is just a click away!"</p>
+        </div>    
+            <div class="para1">
+              <p class="text-center"> TO ORDER </p>
+              <p class="text-center"> Call/whatsApp: 12345-69870</p>
+              <p class="text-center para2"> (Free Door Delivery within 5km)</p>
+              <button class="btn btn-outline-info position-absolute  start-50 mt-4 translate-middle" onclick="display()"><i class="bi bi-person-lines-fill"></i> Contact us</button>
+            </div>
+   </section>
+<!--................................contact.................-->
+   <div class="overlay"></div>
+   <div class="contactform container-fluid position-absolute top-50 mt-4 start-50 translate-middle">
+    <h1 class="mt-3">Contact Us </h1>
+    <button class="btn btn-outline-danger button1 mb-4  mt-1" onclick="none()"><i class="bi bi-x-circle"></i></button>
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputname1" class="form-label">Name</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" required>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+        <div id="emailHelp" class="form-text message">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Phone Number</label>
+        <input type="number" class="form-control" id="exampleInputPassword1" required>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">message</label>
+        <textarea name="message" class="form-control" id="exampleInputPassword1" required></textarea>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+   </div>
+  </div>
+   </body>
+
+   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+ <script>
+  var popupover = document.querySelector(".overlay");
+    var popuppara = document.querySelector(".contactform");
+
+    function display(){
+        popupover.style.display="block";
+        popuppara.style.display="block";
+        
+    }
+
+    function none(){
+        popupover.style.display="none";
+        popuppara.style.display="none";
+    }
+</script>
+</html>
+
+
