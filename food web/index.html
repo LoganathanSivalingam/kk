@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Food</title>
+</head>
+<body>
+    <!-- nav-bar -->
+    <header>
+        <div class="nav-bar container-fluid d-flex justify-content-between">
+            <a href="#" class="p-3 ms-3">Delight Foods</a>
+            <div class="box p-3">
+                <div class="count">0</div>
+                <i class="bi bi-cart" id="cart-icon"></i>
+            </div>
+
+
+            <div class="cart cart-active">
+                <div class="cart-title">Cart items  <i class="bi bi-x-circle close"></i></div>
+
+                 <div class="cart-content">
+                 </div>
+                    <!--
+                    <div class="cart-box">
+                        <img src="images/th (1).jpeg" alt="" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-food-title">Cutlet</div>
+                            <div class="price-box">
+                                <div class="cart-price">Rs.50</div>
+                                <div class="cart-amt">Rs.50</div>
+                            </div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <i class="bi bi-trash removeitem"></i>
+                    </div>
+                    <hr>
+                </div> -->
+
+
+                <!-- <div class="cart-content">
+
+                    <div class="cart-box">
+                        <img src="images/th (1).jpeg" alt="" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-food-title">Cutlet</div>
+                            <div class="price-box">
+                                <div class="cart-price">Rs.50</div>
+                                <div class="cart-amt">Rs.50</div>
+                            </div>
+                            <input type="number" value="" class="cart-quantity">
+                        </div>
+                        <i class="bi bi-trash removeitem"></i>
+                    </div>
+                    <hr>
+                </div> -->
+
+                <div class="con">
+
+                <button class="btn-but">Place Order</button> 
+
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">Rs.0</div>
+                </div>
+
+                </div>
+                
+               
+            </div>
+        </div>
+    </header>
+
+    <!-- food counter -->
+
+    <div class="container-fluid food-list bg-light">
+        <h2 class="title pt-4 ms-4 p-2">What's on your mind?</h2>
+
+        <div class="shop-content row mx-auto row-gap-3">
+
+
+            <div class="food-box  m-lg-auto m-auto lg-mt-4 mt-4">
+                <div class="pic">
+                    <img src="images/OIP (1).jpeg" alt="food" class="foodpic">
+                </div>
+                <div class="food-title mt-3">Paneer Tikka</div>
+                <span class="food-price">Rs.150</span>
+                <i class="bi bi-cart add-cart"></i>
+            </div>
+
+            <div class="food-box  m-lg-auto m-auto lg-mt-4 mt-4">
+                <div class="pic">
+                    <img src="images/OIP.jpeg" alt="food" class="foodpic">
+                </div>
+                <div class="food-title mt-3">Biriyani</div>
+                <span class="food-price">Rs.120</span>
+                <i class="bi bi-cart add-cart"></i>
+            </div>
+
+            <div class="food-box  m-lg-auto m-auto lg-mt-4 mt-4">
+                <div class="pic ">
+                    <img src="images/th (1).jpeg" alt="food" class="foodpic">
+                </div>
+                <div class="food-title mt-3">Cutlet</div>
+                <span class="food-price">Rs.50</span>
+                <i class="bi bi-cart add-cart"></i>
+            </div>
+
+            <div class="food-box m-lg-auto m-auto lg-mt-4 mt-4">
+                <div class="pic">
+                    <img src="images/th (2).jpeg" alt="food" class="foodpic">
+                </div>
+                <div class="food-title mt-3">Grill Chicken</div>
+                <span class="food-price">Rs.320</span>
+                <i class="bi bi-cart add-cart"></i>
+            </div>
+
+            <div class="food-box  m-lg-auto m-auto lg-mt-4 mt-4">
+                <div class="pic">
+                    <img src="images/thumb-1920-439410.jpg" alt="food" class="foodpic">
+                </div>
+                <div class="food-title mt-3">Chicken leg</div>
+                <span class="food-price">Rs.100</span>
+                <i class="bi bi-cart add-cart"></i>
+            </div>
+
+            <div class="food-box  m-lg-auto m-auto lg-mt-4 mt-4">
+                <div class="pic">
+                    <img src="images/th.jpeg" alt="food" class="foodpic">
+                </div>
+                <div class="food-title mt-3">Pizza</div>
+                <span class="food-price">Rs.220</span>
+                <i class="bi bi-cart add-cart"></i>
+            </div>
+
+            <div class="food-box  m-lg-auto m-auto lg-mt-4 mt-4">
+                <div class="pic ">
+                    <img src="images/th (3).jpeg" alt="food" class="foodpic">
+                </div>
+                <div class="food-title mt-3">Burger</div>
+                <span class="food-price">Rs.90</span>
+                <i class="bi bi-cart add-cart"></i>
+            </div>
+
+            <div class="food-box m-lg-auto m-auto lg-mt-4 mt-4">
+                <div class="pic">
+                    <img src="images/th (4).jpeg" alt="food" class="foodpic">
+                </div>
+                <div class="food-title mt-3">Beef</div>
+                <span class="food-price">Rs.200</span>
+                <i class="bi bi-cart add-cart"></i>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</html>
